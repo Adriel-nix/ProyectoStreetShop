@@ -1,0 +1,50 @@
+{
+    "ropa": [
+        {
+            "Id": 1,
+            "descripcion": "Camiseta Nike Vintage 00 - M",
+            "imagen": "imagenes/camisetas/camiNike.jpg", 
+            "precio": "20.000 ₡",
+            "Talla" : "M" 
+        },
+        {
+            "Id": 2,
+            "descripcion": "Camiseta Stussy 8Ball Tee - L",
+            "imagen": "https://i.pinimg.com/736x/00/04/90/000490a02e403ea61324da497b5243cd.jpg",
+            "precio": "25.000 ₡", 
+            "Talla" : "L" 
+        },
+        {
+            "Id": 3,
+            "descripcion": "Crewneck Legacy Vintage - S",
+            "imagen": "https://i.pinimg.com/1200x/6f/c4/80/6fc4802894f8abfade9898032cff307f.jpg",
+            "precio": "15.000 ₡",
+            "Talla" : "S" 
+        },
+        {
+            "Id": 4,
+            "descripcion": "Mens Jeans Shorts Capri Denim Japanese - 30",
+            "imagen": "https://i.pinimg.com/1200x/3e/05/8b/3e058b3a7edd6c680a2b68ac6b2f6f87.jpg",
+            "precio": "32.500 ₡",
+            "Talla" : "30" 
+        },
+
+        {
+            "Id": 5,
+            "descripcion": "Vintage Yankees Jacket - M",
+            "imagen": "https://i.pinimg.com/1200x/1f/85/06/1f8506f01ae5fc7b807d81192c3067b5.jpg",
+            "precio": "55.000 ₡",
+            "Talla" : "M" 
+        },
+        {
+            "Id": 6,
+            "descripcion": "Carhartt trousers - 32",
+            "imagen": "https://i.pinimg.com/1200x/2d/db/ba/2ddbba1d46e0c7eb342ba93fe65c9840.jpg",
+            "precio": "12.950 ₡",
+            "Talla" : "32" 
+            
+        }       
+
+
+   ]
+}
