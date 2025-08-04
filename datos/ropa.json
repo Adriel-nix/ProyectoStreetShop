@@ -3,7 +3,7 @@
         {
             "Id": 1,
             "descripcion": "Camiseta Nike Vintage 00 - M",
-            "imagen": "imagenes/camisetas/camiNike.jpg", 
+            "imagen": "https://i.pinimg.com/1200x/8b/4e/ce/8b4ece55a6c1a3c98435bf9e3d62d046.jpg", 
             "precio": "20.000 ₡",
             "Talla" : "M" 
         },

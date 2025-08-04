@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>New Drop</title>
+    <title>Contact</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -11,12 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">    
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+
     <header>
         <!-- place navbar here -->
         <nav class="navbar navbar-default bg-white navbar-trans navbar-expand-lg fixed-top">
@@ -116,64 +118,127 @@
                     <i class="bi bi-search "></i>
                 </button>
 
-                <a href="carrito.html"
-                    class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse position-relative">
-                    <i class="bi bi-bag fs-5"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                        id="contadorCarrito">
-                        0
-                    </span>
-                </a>
+
 
 
             </div>
-        </nav>
+        </nav><!-- End Header/Navbar -->
+
+
     </header>
 
 
-    <div class="hero-banner position-relative">
-        <div class="container position-relative z-1 py-5">
-            <!-- Filtros dentro del banner -->
-
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row justify-content-center align-items-center  gx-4 gy-2 g-3 bg-white bg-opacity-75 p-4 rounded"   >
-            <div class="col-md-3 me-3">
-                <label class="form-label">Disponibilidad</label>
-                <select class="form-select">
-                    <option>Todos</option>
-                    <option>Disponible</option>
-                    <option>Agotado</option>
-                </select>
+     <section class="intro-single espacioCarrito">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Contact</h1>
             </div>
-            <div class="col-md-3 me-3">
-                <label class="form-label">Precio</label>
-                <select class="form-select">
-                    <option>De menor a mayor</option>
-                    <option>De mayor a menor</option>
-                </select>
-            </div>
-            <div class="col-md-3 me-3">
-                <label class="form-label">Ordenar</label>
-                <select class="form-select">
-                    <option>De la A a la Z</option>
-                    <option>De la Z a la A</option>
-                </select>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section><!-- End Intro Single-->
 
-    <div class="container py-5">
-        <div class="row" id="datosRopa">
-            <!-- Aquí van las tarjetas imagenes/camisetas/camiNike.jpg-->
+
+
+
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          
+        <div class="container">
+            <h2 class="text-center mb-4">Localízanos</h2>
+            <p class="text-center mb-4">Nos encontramos frente a la Pops del Parque Central de Alajuela, Costa Rica</p>
+            <div id="map" style="height: 500px;" class="shadow rounded"></div>
+            <p style="text-align: center; font-size: 30px;" id="distancia"></p>
         </div>
-    </div>
+    
+
+          <div class="col-sm-12 section-t8 mt-5">
+            <div class="row">
+              <div class="col-md-7 ">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Your Name" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Message" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 my-3">
+                      <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 text-center mb-5">
+                      <button type="submit" class="btn btn-dark btn-lg">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-5 section-md-t3">
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-envelope"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Contact Us</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <p class="mb-1">Email.
+                        <span class="color-a">streetshop611@gmail.com</span>
+                      </p>
+                      <p class="mb-1">Phone.
+                        <span class="color-a">+506 6063 0863</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-geo-alt"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Find us in</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <p class="mb-1">
+                        Alajuela, Alajuela ,Al costado este de el parque central, al de la Pops.
+                        <br> CR.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Single-->
 
 
 
-  <footer class="bg-light text-dark pt-5">
+    <footer class="bg-light text-dark pt-5">
         <div class="container">
             <div class="row">
 
@@ -242,8 +307,11 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <script src="js/main.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPLtN_mWs9M2WbEk6oN34c0A0JxFzHamw&callback=initMap&v=weekly&solution_channel=GMP_CCS_geolocation_v2">
+        </script>    
 
+    <script src="js/Mapa.js"></script>
 </body>
 
 </html>

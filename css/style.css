@@ -370,3 +370,15 @@ acomodar el navbar-toggler */
 /* espaciados */
 
 
+.containerAbout {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  max-width: 900px;     /* Limita el ancho */
+  margin: 0 auto;       /* Centra horizontalmente */
+  padding: 2rem 1rem;   /* Espacio interno */
+}
+
