@@ -1,12 +1,48 @@
+
+function limpiarPrecio(precioStr) {
+  const limpio = precioStr.replace(/[^\d]/g, "");
+  return parseInt(limpio) || 0;
+}
+
+
+
+let productosOriginales = [];
+
 fetch("datos/ropa.json")
   .then(res => res.json())
   .then(data => {
-    const contenedor = document.getElementById("datosRopa");
-    data.ropa.forEach(ropa => {
-      contenedor.innerHTML += crearTarjetaRopa(ropa);
-    });
-  })
-  .catch(error => console.error("Error cargando ropa:", error));
+    productosOriginales = data.ropa;
+    renderizarProductos(); // mostrar inicialmente
+  });
+
+function renderizarProductos() {
+  const contenedor = $("#datosRopa");
+  contenedor.html("");
+
+  let productos = [...productosOriginales];
+
+  const vendidos = JSON.parse(localStorage.getItem("vendidos")) || [];
+
+  const disponibilidad = $("#filtroDisponibilidad").val();
+  const precioOrden = $("#filtroPrecio").val();
+  const ordenABC = $("#filtroOrden").val();
+
+  // Filtro por disponibilidad
+  if (disponibilidad === "Disponible") {
+    productos = productos.filter(p => !vendidos.includes(p.Id));
+  } else if (disponibilidad === "Agotado") {
+    productos = productos.filter(p => vendidos.includes(p.Id));
+  }
+
+if (precioOrden === "De menor a mayor") {
+  productos.sort((a, b) => limpiarPrecio(a.precio) - limpiarPrecio(b.precio));
+} else if (precioOrden === "De mayor a menor") {
+  productos.sort((a, b) => limpiarPrecio(b.precio) - limpiarPrecio(a.precio));
+}
+
+  productos.forEach(p => contenedor.append(crearTarjetaRopa(p)));
+}
+
 function crearTarjetaRopa(ropa) {
   const vendidos = JSON.parse(localStorage.getItem("vendidos")) || [];
   const estaVendido = vendidos.includes(ropa.Id);
@@ -41,4 +77,10 @@ function actualizarContadorCarrito() {
 }
 
 document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
+
+
+$("#filtroDisponibilidad, #filtroPrecio, #filtroOrden").on("change", function () {
+  renderizarProductos();
+});
+
 
