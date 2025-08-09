@@ -41,6 +41,7 @@ document.getElementById("formCheckout").addEventListener("submit", function (e) 
   // Mostrar confirmación
   alert(`Gracias por tu compra, ${nombre}.\nTe contactaremos a ${correo} para coordinar la entrega.`);
 
+  
   // Vaciar carrito
   localStorage.removeItem("carrito");
   window.location.href = "NewDrop.html"; // Volver a la tienda
@@ -52,3 +53,6 @@ localStorage.setItem("vendidos", JSON.stringify(vendidos));
 // Vaciar carrito
 localStorage.removeItem("carrito");
 });
+
+
+

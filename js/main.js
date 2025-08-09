@@ -34,11 +34,11 @@ function renderizarProductos() {
     productos = productos.filter(p => vendidos.includes(p.Id));
   }
 
-if (precioOrden === "De menor a mayor") {
-  productos.sort((a, b) => limpiarPrecio(a.precio) - limpiarPrecio(b.precio));
-} else if (precioOrden === "De mayor a menor") {
-  productos.sort((a, b) => limpiarPrecio(b.precio) - limpiarPrecio(a.precio));
-}
+  if (precioOrden === "De menor a mayor") {
+    productos.sort((a, b) => limpiarPrecio(a.precio) - limpiarPrecio(b.precio));
+  } else if (precioOrden === "De mayor a menor") {
+    productos.sort((a, b) => limpiarPrecio(b.precio) - limpiarPrecio(a.precio));
+  }
 
   productos.forEach(p => contenedor.append(crearTarjetaRopa(p)));
 }
