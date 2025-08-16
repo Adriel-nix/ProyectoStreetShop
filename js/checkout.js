@@ -44,7 +44,7 @@ document.getElementById("formCheckout").addEventListener("submit", function (e) 
   
   // Vaciar carrito
   localStorage.removeItem("carrito");
-  window.location.href = "NewDrop.html"; // Volver a la tienda
+  window.location.href = "index.html"; // Volver a la tienda
 
   let vendidos = JSON.parse(localStorage.getItem("vendidos")) || [];
 vendidos = [...new Set([...vendidos, ...carrito])]; // Evita duplicados
