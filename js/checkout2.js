@@ -2,7 +2,7 @@ const carrito = JSON.parse(localStorage.getItem("carrito2")) || [];
 let total = 0;
 
 // Cargar productos en el resumen
-fetch("datos/clothes.json")
+fetch("https://raw.githubusercontent.com/Adriel-nix/ProyectoStreetShop/master/datos/clothes.json")
   .then(res => res.json())
   .then(data => {
     const lista = document.getElementById("resumenCarrito2");

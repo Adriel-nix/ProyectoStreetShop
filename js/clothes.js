@@ -7,7 +7,7 @@ function limpiarPrecio(precioStr) {
 
 let productosOriginales = [];
 
-fetch("datos/clothes.json")
+fetch("https://raw.githubusercontent.com/Adriel-nix/ProyectoStreetShop/master/datos/clothes.json")
   .then(res => res.json())
   .then(data => {
     productosOriginales = data.clothes;
