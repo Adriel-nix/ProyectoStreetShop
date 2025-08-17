@@ -1,0 +1,52 @@
+{
+    "clothes": [
+        {
+            "Id": 7,
+            "descripcion": "SINGLE STITCHED “NY” TEE - 1990 - M",
+            "imagen": "https://i.pinimg.com/1200x/be/ea/e6/beeae664b1497aee56abbc413f6544b5.jpg", 
+            "precio": "12.500 ₡",
+            "Talla" : "M" 
+        },
+        {
+            "Id": 8,
+            "descripcion": "Vintage Oakley Tee - L",
+            "imagen": "https://i.pinimg.com/1200x/71/e8/b2/71e8b29f57bad1188e5cc833ea603bce.jpg",
+            "precio": "15.000 ₡", 
+            "Talla" : "L" 
+        },
+        {
+            "Id": 9,
+            "descripcion": "EMMIOL Women's Denim Flare Leg Jeans - Y2K 90s Low Rise Vintage Pants",
+            "imagen": "https://i.pinimg.com/736x/b2/0c/e6/b20ce6d9b541ac36ac279bfbd887d35e.jpg",
+            "precio": "15.000 ₡",
+            "Talla" : "26x28" 
+        },
+        {
+            "Id": 10,
+            "descripcion": "CARHARTT DISTRESSED FADED BURGUNDY SANTA FE JACKET 1990S - M",
+            "imagen": "https://i.pinimg.com/736x/21/ee/4c/21ee4cf10a8644c3cd9399f3360584a2.jpg",
+            "precio": "32.500 ₡",
+            "Talla" : "M" 
+        },
+
+        {
+            "Id": 11,
+            "descripcion": "25 Things That '90s Kids Are Still Trying To Figure Out 32x30",
+            "imagen": "https://i.pinimg.com/736x/e9/c9/32/e9c9320e4eaa69ff3d3c62e27e7e547e.jpg",
+            "precio": "55.000 ₡",
+            "Talla" : "32x30" 
+        },
+        {
+            "Id": 12,
+            "descripcion": "Baggy Wide Vintage Washed Blue Jeans - Black / 34",
+            "imagen": "https://i.pinimg.com/1200x/11/4c/c0/114cc03c32324eccc67b39561f81224d.jpg",
+            "precio": "22.950 ₡",
+            "Talla" : "34" 
+            
+        }       
+
+
+   ]
+
+   
+}

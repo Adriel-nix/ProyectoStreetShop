@@ -1,25 +1,17 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Clothes</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <title>Finalizar Compra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 
-    <header>
-        <!-- place navbar here -->
+    <head>
         <nav class="navbar navbar-default bg-white navbar-trans navbar-expand-lg fixed-top">
             <div class="container">
 
@@ -44,7 +36,8 @@
                             <a class="nav-link" href="newDrop.html">New Drop</a>
                         </li>
 
-                        <li class="nav-item">
+
+                       <li class="nav-item">
                             <a class="nav-link" href="clothes.html">Clothes</a>
                         </li>
 
@@ -75,61 +68,58 @@
                     </ul>
                 </div>
 
-                <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
-                    data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-                    <i class="bi bi-search "></i>
-                </button>
 
-                <a href="carrito2.html"
-                    class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse position-relative">
-                    <i class="bi bi-bag fs-5"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                        id="contadorCarrito2">
-                        0
-                    </span>
-                </a>
 
 
             </div>
         </nav>
-    </header>
+    </head>
 
-    <div class="hero-banner position-relative">
-        <div class="container position-relative z-1 py-5">
-            <!-- Filtros dentro del banner -->
 
-        </div>
+  <div class="container py-5">
+    <h2 class="mb-4 espacioCheck">Finalizar Compra</h2>
+
+    <div class="row">
+      <!-- Formulario de cliente -->
+      <div class="col-md-6">
+        <form id="formCheckout">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" required>
+          </div>
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección de entrega</label>
+            <textarea class="form-control" id="direccion" rows="2" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Método de pago</label>
+            <select class="form-select" id="metodoPago" required>
+              <option value="">Seleccionar</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="sinpe">SINPE móvil</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-dark">Finalizar compra</button>
+        </form>
+      </div>
+
+      <!-- Resumen del carrito -->
+      <div class="col-md-6">
+        <h4 class="mb-3">Productos en tu pedido:</h4>
+        <ul class="list-group mb-3" id="resumenCarrito2">
+          <!-- Productos añadidos -->
+        </ul>
+        <p class="fw-bold">Total: <span id="totalPrecio2">₡ 0</span></p>
+      </div>
     </div>
-
-    <div class="container">
-        <div class="row justify-content-center align-items-center  gx-4 gy-2 g-3 bg-white bg-opacity-75 p-4 rounded">
-            <div class="col-md-3 me-3">
-                <label class="form-label">Disponibilidad</label>
-                <select class="form-select" id="filtroDisponibilidad">
-                    <option>Todos</option>
-                    <option>Disponible</option>
-                    <option>Agotado</option>
-                </select>
-            </div>
-            <div class="col-md-3 me-3">
-                <label class="form-label">Precio</label>
-                <select class="form-select" id="filtroPrecio">
-                    <option>De menor a mayor</option>
-                    <option>De mayor a menor</option>
-                </select>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container py-5">
-        <div class="row" id="datosClothes">
-            <!-- Aquí van las tarjetas con las imagenes y valores llamadas por medio del json-->
-        </div>
-    </div>
+  </div>
 
 
-    <footer class="bg-light text-dark pt-5">
+  <footer class="bg-light text-dark pt-5">
         <div class="container">
             <div class="row">
 
@@ -186,9 +176,8 @@
                 </div>
             </div>
     </footer>
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+   
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
@@ -196,10 +185,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <script src="js/clothes.js"></script>
+  <script src="js/checkout2.js"></script>
 
 </body>
-
 </html>

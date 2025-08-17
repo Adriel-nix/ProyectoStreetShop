@@ -27,7 +27,7 @@ function mostrarDetalle(ropa) {
       <div class="col-md-6">
         <h2>${ropa.descripcion}</h2>
         <h4 class="text-muted">₡ ${ropa.precio}</h4>
-        <p>Talla: M</p>
+        <p>Talla: ${ropa.Talla}</p>
         ${estaVendido
           ? '<button class="btn btn-secondary mt-3" disabled>Producto Agotado</button>'
           : `<button class="btn btn-dark mt-3" onclick="agregarACesta(${ropa.Id})">Añadir a la cesta</button>`
