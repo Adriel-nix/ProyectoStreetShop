@@ -2,7 +2,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 // Cargar JSON y buscar el producto
-fetch("datos/ropa.json")
+// fetch("datos/ropa.json")
+fetch("https://raw.githubusercontent.com/Adriel-nix/ProyectoStreetShop/master/datos/ropa.json")
   .then(res => res.json())
   .then(data => {
     const producto = data.ropa.find(item => item.Id == id);

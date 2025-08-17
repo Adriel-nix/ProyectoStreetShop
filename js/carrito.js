@@ -1,6 +1,7 @@
 const ids = JSON.parse(localStorage.getItem("carrito")) || [];
 
-fetch("datos/ropa.json")
+// fetch("datos/ropa.json")
+fetch("https://raw.githubusercontent.com/Adriel-nix/ProyectoStreetShop/master/datos/ropa.json")
   .then(res => res.json())
   .then(data => {
     const contenedor = document.getElementById("contenedorCarrito");
